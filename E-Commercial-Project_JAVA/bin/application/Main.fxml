@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="478.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane prefHeight="383.0" prefWidth="544.0">
+         <children>
+            <ComboBox fx:id="_cmbID" layoutX="386.0" layoutY="165.0" onAction="#onClickedShow" prefHeight="25.0" prefWidth="212.0" promptText="--Choose the Name of Table--" />
+            <TextArea fx:id="_txtShow" layoutX="115.0" layoutY="243.0" prefHeight="223.0" prefWidth="439.0" />
+            <Label layoutX="39.0" prefHeight="66.0" prefWidth="225.0" text="Aritzia LP. Database">
+               <font>
+                  <Font name="Microsoft Yi Baiti" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="_btnShip" layoutX="227.0" layoutY="80.0" mnemonicParsing="false" onAction="#onClickedShipped" text="Check the shipping status" />
+            <Label layoutX="409.0" layoutY="140.0" prefHeight="17.0" prefWidth="149.0" text="Show All the Information" />
+            <Button fx:id="_btnOrderNum" layoutX="226.0" layoutY="136.0" mnemonicParsing="false" onAction="#onClickedOrderNumber" prefHeight="25.0" prefWidth="129.0" text="Find the Total Orders" />
+            <TextField fx:id="_customerID" layoutX="57.0" layoutY="136.0" promptText="--Enter the customer ID" />
+            <TextField fx:id="_orderID" layoutX="59.0" layoutY="80.0" promptText="--Enter the order ID" />
+            <Button fx:id="_btnOrderAmt" layoutX="411.0" layoutY="80.0" mnemonicParsing="false" onAction="#onClickedOrderAmount" text="Check the order amount" />
+            <TextField fx:id="_productID" layoutX="57.0" layoutY="188.0" prefHeight="25.0" prefWidth="152.0" promptText="--Enter the product ID" />
+            <Button fx:id="_btnInvent" layoutX="226.0" layoutY="188.0" mnemonicParsing="false" onAction="#onClickedInventory" prefHeight="25.0" prefWidth="129.0" text="Check The Inventory" />
+            <Label layoutX="39.0" layoutY="169.0" prefHeight="17.0" prefWidth="225.0" text="Enter Product ID from 20001-20010" />
+            <Label layoutX="37.0" layoutY="118.0" prefHeight="17.0" prefWidth="187.0" text="Enter Customer ID from 1110-1119" />
+            <Label layoutX="37.0" layoutY="62.0" prefHeight="17.0" prefWidth="187.0" text="Enter Order ID from 60023-60033" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
